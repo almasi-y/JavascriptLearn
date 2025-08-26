@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript All-in-One Demo</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700|Montserrat:700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <h1 id="title">JS Capstone Project</h1>
+    <button id="btn">Greet Me</button>
+     <nav aria-label="Main Navigation">
+      <ul>
+        <li><a href="#profile">Profile</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <!-- <li><a href="#media">Media</a></li>
+        <li><a href="#contact">Contact</a></li> -->
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2>Contact List</h2>
+      <input id="contactName" placeholder="Name">
+      <input id="contactPhone" placeholder="Phone">
+      <button id="addContactBtn">Add Contact</button>
+      <ul id="contactList"></ul>
+    </section>
+    <section id="profile" class="card">
+      <h2>Profile Page</h2>
+      <div class="profile-flex">
+        <img src="https://i.pravatar.cc/120?img=3" alt="Profile photo of Jane Doe" width="120">
+        <div>
+          <p>Hello! I'm <strong>Jane Doe</strong>, a <em>web developer</em> passionate about design and code.</p>
+          <a href="https://github.com" target="_blank" class="btn">Visit my GitHub</a>
+        </div>
+      </div>
+      <hr>
+    </section>
+    <section id="pricing" class="card">
+      <h2>Pricing Table</h2>
+      <table>
+        <caption>Service Plans</caption>
+        <thead>
+          <tr>
+            <th>Plan</th>
+            <th>Price</th>
+            <th>Features</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Basic</td>
+            <td>$10</td>
+            <td>
+              <ul>
+                <li>Email support</li>
+                <li>1 project</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>Pro</td>
+            <td>$30</td>
+            <td>
+              <ul>
+                <li>Priority support</li>
+                <li>Unlimited projects</li>
+                <li>Analytics</li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <section id="blog" class="card blog-grid">
+      <div>
+        <h2>Latest Blog</h2>
+        <article>
+          <header>
+            <h3>Getting Started with HTML</h3>
+            <time datetime="2025-08-21">August 21, 2025</time>
+          </header>
+          <p>This blog covers the basics of HTML, including tags, structure, and accessibility.</p>
+          <footer>
+            <p>By Jane Doe</p>
+          </footer>
+        </article>
+      </div>
+      <aside>
+        <h4>Related Links</h4>
+        <ul>
+          <li><a href="#">HTML Reference</a></li>
+          <li><a href="#">CSS Tricks</a></li>
+        </ul>
+      </aside>
+    </section>
+    <section id="media" class="card media-flex">
+      <h2>Media Gallery</h2>
+      <audio controls>
+        <source src="sample.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+      </audio>
+      <video width="320" height="180" controls poster="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=320&q=80">
+        <source src="sample.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <iframe width="320" height="180" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube Video" allowfullscreen></iframe>
+      <iframe src="https://maps.google.com/maps?q=New+York&t=&z=13&ie=UTF8&iwloc=&output=embed" width="320" height="180" title="Google Map"></iframe>
+    </section>
+    <section id="contact" class="card">
+      <h2>Contact Form</h2>
+      <form>
+        <fieldset>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="your@email.com" required>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" placeholder="Type your message..." required></textarea>
+          <label>
+            <input type="checkbox" name="subscribe" checked>
+            Subscribe to newsletter
+          </label>
+          <div class="gender-group">
+            <label>Gender:</label>
+            <label><input type="radio" name="gender" value="male"> Male</label>
+            <label><input type="radio" name="gender" value="female"> Female</label>
+          </div>
+          <button type="submit" class="btn">Send <i class="fa fa-paper-plane"></i></button>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <section>
+      <h4>Footer</h4>
+      <p>&copy; 2025 Jane Doe. <span role="img" aria-label="Rocket">🚀</span> All rights reserved.</p>
+    </section>
+  </footer>
+</body>
+</html>
